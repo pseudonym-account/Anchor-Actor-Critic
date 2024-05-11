@@ -1,0 +1,54 @@
+{
+  "common": {
+    "exp_name": "exp",
+    "hid":256,
+    "l":2,
+    "lr": 3e-4,
+    "alpha": 0.2,
+    "gamma": 0.99,
+    "polyak": 0.995,
+    "update_interval": 500,
+    "batch_size": 512,
+    "epochs": 300, 
+    "steps_per_epoch": 4000,
+    "start_steps": 10000,
+    "max_ep_len": 1000,
+    "update_every":200,
+    "update_after": 1000,
+    "save_freq":1,
+    "num_test_episodes":10,
+    "replay_size":10000000,
+    "seed":47    
+  },
+  "sac": {
+    "auto_a": true
+  },
+  "anchor_sac": {
+    "anchor" :{
+        "alpha": 0.2
+    },
+    "update_interval": 1000,
+    "batch_size":1024,
+    "static_anchor":false,
+    "auto_a": true,
+    "C": 6
+  },
+  "lap": {
+    "anchor" :{
+        "alpha": 0.2
+    },
+    "update_interval": 1000,
+    "batch_size":1024,
+    "static_anchor":false,
+    "auto_a": true,
+    "C": 16
+  },
+  "mop": {
+    "anchor" :{
+        "alpha": 1.0
+    },
+    "static_anchor":false,
+    "auto_a": true,
+    "C": 8
+  }
+}

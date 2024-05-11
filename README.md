@@ -1,1 +1,2 @@
-# Anchor-Actor-Critic
+# AnchorAC
+
